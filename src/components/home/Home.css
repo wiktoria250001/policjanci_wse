@@ -1,10 +1,8 @@
 .home {
   /* background-color: black; */
-  color: white;
+  color: gray;
   width: 100vw;
   height: 100vh;
-  display: flex;
-  justify-content: center;
 }
 .home_right {
   background-color: rgb(142, 143, 149);
@@ -16,11 +14,12 @@
 .home_left {
   background-color: rgb(142, 143, 149);
   width: 40vw;
-  display: flex;
+
   justify-content: center;
   align-items: center;
   margin: 50px;
 }
+
 .home_top_about {
   color: gray;
   font-style: normal;
@@ -42,10 +41,7 @@
     flex-direction: column;
   }
   .plan {
-    width: 400px;
-  }
-  .plan {
-    width: 85vw;
+    width: 10vw;
     margin: 0 10vw;
   }
 }
