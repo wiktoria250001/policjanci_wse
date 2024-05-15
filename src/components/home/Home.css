@@ -34,3 +34,18 @@
   min-height: 15vh;
   background-color: aqua;
 }
+@media screen and (max-width: 1000px) {
+  * {
+    /* background-color: blue; */
+  }
+  .home_botton {
+    flex-direction: column;
+  }
+  .plan {
+    width: 400px;
+  }
+  .plan {
+    width: 85vw;
+    margin: 0 10vw;
+  }
+}
