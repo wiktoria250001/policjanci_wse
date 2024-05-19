@@ -11,6 +11,24 @@
   flex-direction: column;
   align-content: center;
 }
+.home_right_title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 68px;
+  line-height: 115px;
+
+  color: #000000;
+}
+
+.home_right_subtitle {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 50px;
+  /* identical to box height */
+
+  color: #000000;
+}
 .home_left {
   background-color: rgb(142, 143, 149);
   width: 40vw;
