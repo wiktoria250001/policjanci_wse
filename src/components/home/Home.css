@@ -1,65 +1,82 @@
 .home {
   /* background-color: black; */
-  color: gray;
-  width: 100vw;
-  height: 100vh;
-}
-.home_right {
-  background-color: rgb(142, 143, 149);
-  width: 40vw;
   display: flex;
-  flex-direction: column;
-  align-content: center;
-}
-.home_right_title {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 68px;
-  line-height: 115px;
-
-  color: #000000;
+  background-color: rgb(247, 247, 247);
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  padding: 20px;
 }
 
-.home_right_subtitle {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 36px;
-  line-height: 50px;
-  /* identical to box height */
-
-  color: #000000;
-}
 .home_left {
   background-color: rgb(142, 143, 149);
-  width: 40vw;
-
+  width: 90vw;
+  height: 70vh;
+  display: flex;
   justify-content: center;
   align-items: center;
   margin: 50px;
 }
+.logo_policji {
+  width: 38vw;
+  height: 60vh;
+}
 
-.home_top_about {
-  color: gray;
-  font-style: normal;
-  font-size: 20px;
+.home_right {
+  background-color: rgb(142, 143, 149);
+  width: 50vw;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-content: flex-end;
+}
+.home_right_title {
   position: absolute;
-  top: 10px;
-  right: 10px;
+  width: 465px;
+  height: 169px;
+  left: 1800px;
+  top: 300px;
+
+  font-family: "Basic";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 96px;
+  line-height: 121px;
+
+  color: #ffffff;
+
+  color: #ffffff;
 }
 
-.home_top {
-  min-height: 15vh;
-  background-color: aqua;
+.home_right_subtitle {
+  /* Zarządzanie jednostkami policji i policjantami przypisanymi do danej jednostki */
+
+  position: absolute;
+  width: 800px;
+  height: 262px;
+  left: 1700px;
+  top: 470px;
+
+  font-family: "Basic";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 60px;
+
+  color: #ffffff;
 }
-@media screen and (max-width: 1000px) {
-  * {
-    /* background-color: blue; */
-  }
-  .home_botton {
-    flex-direction: column;
-  }
-  .plan {
-    width: 10vw;
-    margin: 0 10vw;
-  }
+.home_right_button {
+  /* Group 1 */
+
+  position: absolute;
+  width: 320px;
+  height: 120px;
+  left: 1910px;
+  top: 787px;
+
+  background-color: rgb(43, 45, 64);
+  color: #ffffff;
+  border-color: transparent;
+  font-size: 35px;
 }
