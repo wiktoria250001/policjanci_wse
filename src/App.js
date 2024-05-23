@@ -1,22 +1,14 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import "./App.css";
 import Home from "./components/home/Home";
-import Services from "./components/home/services/Services";
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/home",
     element: <Home />,
-  },
-
-  {
-    path: "/services",
-    element: <Services />,
   },
 ]);
 function App() {
-  const imie = "tomasz";
-
   return (
     <div className="App">
       <RouterProvider router={router} />
