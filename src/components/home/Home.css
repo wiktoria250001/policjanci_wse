@@ -1,67 +1,82 @@
 .home {
   /* background-color: black; */
   display: flex;
-  background-color: rgb(151, 190, 212);
   justify-content: space-between;
   align-items: center;
-  height: 90vh;
-  width: 90vw;
-  padding: 20px;
+  height: 100vh;
+  width: 100vw;
 }
 
 .home_left {
-  background-color: rgb(142, 143, 149);
-  width: 70vw;
-  height: 70vh;
+  color: #233a3b;
+  width: 55vw;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 5px;
 }
 .logo_policji {
-  width: 38vw;
-  height: 60vh;
+  width: 55vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .home_right {
-  background-color: rgb(142, 143, 149);
-  width: 50vw;
-  height: 70vh;
+  background-color: #233a3b;
+  color: #233a3b;
+  width: 55vw;
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  align-content: flex-end;
 }
 .home_right_title {
-  position: absolute;
-  width: 465px;
-  height: 169px;
-  left: 1150px;
-  top: 150px;
+  /* St. JOHN’S POLICE */
 
-  font-family: "Basic";
+  position: absolute;
+  width: 731px;
+  height: 205px;
+  left: 1106px;
+  top: 420px;
+
+  font-family: "League Gothic";
   font-style: normal;
   font-weight: 400;
-  font-size: 96px;
+  font-size: 83px;
   line-height: 121px;
 
   color: #ffffff;
+}
+.line3 {
+  /* Line 1 */
 
-  color: #ffffff;
+  position: absolute;
+  width: 720px;
+  height: 0px;
+  left: 1106px;
+  top: 530px;
+
+  border: 2px solid #ffffff;
+  transform: rotate(0.16deg);
 }
 
 .home_right_subtitle {
   /* Zarządzanie jednostkami policji i policjantami przypisanymi do danej jednostki */
 
-  position: absolute;
-  width: 800px;
-  height: 400px;
-  left: 1100px;
-  top: 300px;
+  /* COMITTED TO PROTECT YOU */
 
-  font-family: "Basic";
+  position: absolute;
+  width: 794px;
+  height: 136px;
+  left: 1140px;
+  top: 570px;
+
+  font-family: "League Gothic";
   font-style: normal;
   font-weight: 400;
-  font-size: 48px;
+  font-size: 42px;
   line-height: 60px;
 
   color: #ffffff;
@@ -70,28 +85,76 @@
   /* Group 1 */
 
   position: absolute;
-  width: 320px;
-  height: 120px;
-  left: 1310px;
-  top: 587px;
+  width: 300px;
+  height: 100px;
+  left: 185px;
+  top: 130px;
 
-  background-color: rgb(43, 45, 64);
+  background-color: #233a3b;
   color: #ffffff;
   border-color: transparent;
-  font-size: 35px;
-}
-.home_top_about {
-  color: rgb(255, 255, 255);
-  font-style: normal;
-  font-size: 28px;
-  position: absolute;
-  top: 10px;
-  left: 1580px;
+  font-size: 30px;
+
+  background: #233a3b;
+  border: 1px solid #ffffff;
+
+  /* Rectangle 1 */
+
+  box-sizing: border-box;
 }
 
+.home_right_button:hover {
+  background-color: #5c5f62; /* Kolor tła po najechaniu */
+  color: #fff; /* Kolor tekstu po najechaniu */
+}
+
+.home_top_about {
+  /* About us */
+
+  position: absolute;
+  width: 358px;
+  height: 206px;
+  left: 1457px;
+  top: 40px;
+
+  font-family: "League Gothic";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 45px;
+
+  color: #ffffff;
+}
+.home_top_about1 {
+  /* Contact us */
+
+  position: absolute;
+  width: 204px;
+  height: 494px;
+  left: 1158px;
+  top: 40px;
+
+  font-family: "League Gothic";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 45px;
+
+  color: #fff;
+}
+
+.logo1 {
+  /* 1-removebg-preview 1 */
+
+  position: absolute;
+  width: 131.16px;
+  height: 120px;
+  left: 1710px;
+  top: 10px;
+}
 .home_top {
   min-height: 30vh;
-  background-color: aqua;
+  background-color: #233a3b;
 }
 
 @media screen and (max-width: 1000px) {
@@ -102,7 +165,7 @@
     flex-direction: column;
   }
   .logo_policji {
-    width: 85vw;
-    margin: 0 10vw;
+    width: 100vw;
+    margin: 0 0vw;
   }
 }
