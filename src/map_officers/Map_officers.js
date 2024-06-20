@@ -1,25 +1,28 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
+import "./Map_officers.css";
 import {
   LayersControl,
   MapContainer,
   TileLayer,
   WMSTileLayer,
+  GeoJSON,
 } from "react-leaflet";
-import "./Map_officers.css";
 import "leaflet/dist/leaflet.css";
 import axios from "axios";
+import MarkerOfficersPlacement from "./MarkerOfficersPlacement";
 
 function Map_officers() {
+  const [officers, setOfficers] = useState(null);
+
   useEffect(() => {
-    console.log("aa");
     const getData = () => {
       axios
         .get(
-          // "http://127.0.0.1:8080/geoserver/prge/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=prge%3Agranice_wojewodztw_db&maxFeatures=50&outputFormat=application%2Fjson"
-          "https://jsonplaceholder.typicode.com/posts/1"
+          "http://127.0.0.1:8080/geoserver/prge/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=prge%3Apolicjanci&maxFeatures=50&outputFormat=application%2Fjson"
         )
         .then((dane) => {
           console.log(dane);
+          setOfficers(dane.data.features);
         });
     };
     getData();
@@ -40,15 +43,15 @@ function Map_officers() {
           </LayersControl.BaseLayer>
           <LayersControl.BaseLayer name="granice wojewodztw db">
             <WMSTileLayer
-              layers="granice_wojewodztw_db"
-              url="http://127.0.0.1:8080/geoserver/prge/wms"
+              layers="Officers db"
+              url="http://127.0.0.1:8080/geoserver/prge/ows"
             />
           </LayersControl.BaseLayer>
-          {/* <LayersControl.Overlay name="granice_wojewodztwa_db_wfs">
-            <GeoJSON
-              data={}
-            />
-          </LayersControl.Overlay> */}
+          <LayersControl.Overlay checked name="Officers DB WFS">
+            {officers ? <GeoJSON dane={officers} /> : ""}
+            {/* jak już będzie okodowany marker i linijkę pod spodem wrzucisz markerplacement to zmień w linijce wyżej dane na data */}
+            <MarkerOfficersPlacement />
+          </LayersControl.Overlay>
         </LayersControl>
       </MapContainer>
     </div>
