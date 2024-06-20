@@ -1,0 +1,60 @@
+.services {
+  background: #233a3b;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.services_title {
+  font-family: "League Gothic";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 83px;
+  line-height: 151px;
+  color: #ffffff;
+  margin-bottom: 40px;
+}
+
+.services_bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.service_button {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  text-align: center;
+  background: #233a3b; /* Tło przycisku */
+  padding: 20px; /* Dodajemy odstęp wewnętrzny */
+  border: 2px solid #ffffff; /* Biała obwódka */
+  border-radius: 20px; /* Zaokrąglone rogi */
+}
+
+.service_image {
+  width: 359.46px;
+  height: 359.46px;
+  border-radius: 20px;
+  background: #233a3b; /* Tło obrazka */
+}
+
+.service_title {
+  font-family: "Basic";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 60px;
+  color: #233a3b;
+  margin-top: 20px;
+}
+
+.service_button:hover .service_title {
+  color: #ffffff;
+}

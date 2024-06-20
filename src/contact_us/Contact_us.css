@@ -1,0 +1,9 @@
+.contact_us {
+  /* background-color: black; */
+  display: flex;
+  background: grey;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}

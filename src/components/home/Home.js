@@ -1,27 +1,32 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Home.css";
-import plan_wat from "./plan_wat.jpg";
+import logo from "./1.png";
+import logo1 from "./logo.png";
+import line3 from "./Line 3.png";
 
 function Home({ text }) {
   return (
     <div className="home">
       <div className="home_top">
-        <div className="home_top_about">O projekcie</div>
+        <img className="logo1" src={logo1} alt="logo" />
+        <Link to="/contact_us" className="home_top_about">
+          Contact us
+        </Link>
+        <Link to="/about_us" className="home_top_about1">
+          About us
+        </Link>
       </div>
-      <div className="home_bottom">
-        <div className="home_left">
-          <img className="plan_wat" src={plan_wat} alt="logo" />
-        </div>
-
-        <div className="home_right">
-          <div className="home_right_title">GEOPORTAL</div>
-
-          <div className="home_right_subtitle">
-            Strona internetowa z interaktywną mapą
-          </div>
-          <Link to="services">
-            <button className="home_right_button">START</button>
+      <div className="home_left">
+        <img className="logo_policji" src={logo} alt="logo" />
+      </div>
+      <div className="home_right">
+        <img className="line3" src={line3} alt="line3" />
+        <div className="home_right_title">ST. JOHN'S POLICE</div>
+        <div className="home_right_subtitle">
+          COMMITTED TO PROTECT YOU
+          <Link to="/police_services">
+            <button className="home_right_button">GET STARTED!</button>
           </Link>
         </div>
       </div>

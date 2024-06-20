@@ -1,0 +1,225 @@
+.about_us {
+  /* background-color: black; */
+  display: flex;
+  background: #233a3b;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+.about_us_title3 {
+  /* OUR HISTORY */
+
+  position: absolute;
+  width: 500px;
+  height: 77px;
+  left: 1250px;
+  top: 614px;
+
+  font-family: "League Gothic";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 77px;
+  /* identical to box height */
+
+  color: #000000;
+}
+.rectangle10 {
+  /* Rectangle 10 */
+
+  position: absolute;
+  width: 520px;
+  height: 265px;
+  left: 1154px;
+  top: 600px;
+
+  background: #d9d9d9;
+  border-radius: 20px;
+}
+.stjohns {
+  /* Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. */
+
+  position: absolute;
+  width: 435px;
+  height: 199px;
+  left: 674px;
+  top: 630px;
+  z-index: 10;
+  font-family: "Chelsea Market";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 25px;
+  display: flex;
+  align-items: flex-end;
+
+  color: #ffffff;
+}
+.stjohns1 {
+  /* Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. */
+
+  position: absolute;
+  width: 435px;
+  height: 199px;
+  left: 1200px;
+  top: 630px;
+  z-index: 10;
+  font-family: "Chelsea Market";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 25px;
+  display: flex;
+  align-items: flex-end;
+
+  color: #000000;
+}
+.about_us_title {
+  /* CONTACT US */
+
+  position: absolute;
+  width: 427px;
+  height: 77px;
+  left: 225px;
+  top: 61px;
+  z-index: 10;
+  font-family: "League Gothic";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 77px;
+  /* identical to box height */
+
+  color: #ffffff;
+}
+.about_us_subtitle {
+  /* www.policestjohnshquarters.com */
+
+  position: absolute;
+  width: 340px;
+  height: 32px;
+  left: 254px;
+  top: 134px;
+  z-index: 10;
+  font-family: "League Gothic";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 38px;
+
+  color: #ffffff;
+}
+.about_us_subtitle1 {
+  /* hello@reallygreatsite.com */
+
+  position: absolute;
+  width: 217px;
+  height: 38px;
+  left: 254px;
+  top: 164px;
+
+  font-family: "League Gothic";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 38px;
+  z-index: 10;
+  color: #ffffff;
+}
+.about_us_subtitle2 {
+  /* +123-456-7890 */
+
+  position: absolute;
+  width: 537px;
+  height: 37px;
+  left: 254px;
+  top: 194px;
+  font-family: "League Gothic";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 38px;
+  z-index: 10;
+  color: #ffffff;
+}
+.line1 {
+  /* Line 1 */
+
+  position: absolute;
+  width: 420px;
+  height: 0px;
+  left: 674px;
+  top: 600px;
+
+  border: 2px solid #ffffff;
+  transform: rotate(0.16deg);
+}
+.police_vv {
+  /* Projekt bez nazwy 1 */
+
+  position: absolute;
+  width: 428.92px;
+  height: 600px;
+  left: 175px;
+  top: 268px;
+
+  border-radius: 20px;
+}
+.about_us_title2 {
+  /* ABOUT US */
+
+  position: absolute;
+  width: 500px;
+  height: 77px;
+  left: 719px;
+  top: 614px;
+
+  font-family: "League Gothic";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 77px;
+  /* identical to box height */
+
+  color: #ffffff;
+}
+.line2 {
+  /* Line 2 */
+
+  position: absolute;
+  width: 420px;
+  height: 0px;
+  left: 674px;
+  top: 865px;
+
+  border: 2px solid #ffffff;
+  transform: rotate(0.28deg);
+}
+.police_night {
+  /* police_night 1 */
+
+  position: absolute;
+  width: 1000px;
+  height: 518.75px;
+  left: 670px;
+  top: 47px;
+}
+
+.rectangle_11 {
+  /* Rectangle 11 */
+
+  box-sizing: border-box;
+
+  position: absolute;
+  width: 427.92px;
+  height: 207px;
+  left: 175px;
+  top: 47px;
+
+  background: #233a3b;
+  mix-blend-mode: normal;
+  border: 2px solid #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+}
