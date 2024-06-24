@@ -1,5 +1,5 @@
 import L from "leaflet";
-import marker from "./marker.png";
+import marker from "./merker_blue.png";
 
 const LeafIcon = L.Icon.extend({
   options: {
@@ -9,4 +9,4 @@ const LeafIcon = L.Icon.extend({
   },
 });
 
-export const officersmarker = new LeafIcon({ iconUrl: marker });
+export const accidentsmarker = new LeafIcon({ iconUrl: marker });

@@ -72,3 +72,40 @@
 
   background: #ffffff;
 }
+.table_mid1 {
+  width: 100%;
+}
+
+/* Styl dla kontenera, aby wyśrodkować tabelę pionowo i poziomo */
+.table-container1 {
+  display: flex;
+  justify-content: center; /* Wyśrodkowanie poziome */
+  align-items: center; /* Wyśrodkowanie pionowe */
+  height: 80vh; /* Wysokość 100% widoku */
+}
+
+/* Styl dla tabeli */
+.stations_table {
+  width: 83%; /* Możesz dostosować szerokość według potrzeb */
+  border-collapse: collapse;
+  margin: 0 auto; /* Wyśrodkowanie poziome, gdyby flexbox nie był użyty */
+
+  font-family: "League Gothic";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 58px;
+
+  color: #ffffff;
+}
+
+/* Styl dla nagłówków i komórek tabeli */
+.officers_table th,
+.stations_table td {
+  border: 1px solid#f9f9f9;
+  padding: 10px;
+  text-align: left;
+}
+.stations_table th {
+  background: #00676c;
+}
