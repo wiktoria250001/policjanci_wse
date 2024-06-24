@@ -1,29 +1,29 @@
 import React, { useState, useEffect } from "react";
-import "./Police_dashboard.css";
+import "./Accidents_dashboard.css";
 import { Link } from "react-router-dom";
 import axios from "axios";
 import button1 from "./button10.png";
 import button2 from "./button20.png";
 import button3 from "./button30.png";
 import rectangle8 from "./Rectangle80.png";
-import MediaCard from "./Officers_card";
+import MediaCard from "./Accidents_cards";
 
-function Police_dashboard() {
-  const [police_dashboardData, setPolice_dashboardData] = useState([]);
+function Accidents_dashboard() {
+  const [accidents_dashboardData, setAccidents_dashboardData] = useState([]);
 
   useEffect(() => {
     axios
       .get(
-        "http://127.0.0.1:8080/geoserver/prge/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=prge%3Apolicjanci&maxFeatures=50&outputFormat=application%2Fjson"
+        "http://localhost:8080/geoserver/prge/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=prge%3Awypadki&maxFeatures=50&outputFormat=application%2Fjson"
       )
       .then((response) => {
         console.log("API response:", response.data);
         const data = response.data;
         if (data.features && data.features.length > 0) {
-          const officers = data.features.map((feature) => feature.properties);
-          setPolice_dashboardData(officers);
+          const accidents = data.features.map((feature) => feature.properties);
+          setAccidents_dashboardData(accidents);
         } else {
-          console.error("No police officer data found in the response");
+          console.error("No police accident  data found in the response");
         }
       })
       .catch((error) => {
@@ -32,9 +32,9 @@ function Police_dashboard() {
   }, []);
 
   return (
-    <div className="officers_dashboard">
-      <div className="officers_top">
-        <div className="service_title">Police officers dashboard</div>
+    <div className="accidents_dashboard">
+      <div className="accidents_top">
+        <div className="service_title">Accidents dashboard</div>
         <div className="services_line"></div>
         <div className="database_menu">
           <img className="rectangle8" src={rectangle8} alt="rectangle8" />
@@ -42,26 +42,28 @@ function Police_dashboard() {
             <img src={button1} alt="button1" />
           </Link>
           <Link
-            to="/police_services/police_database1/map_officers"
+            to="/police_services/accidents/map_accidents"
             className="button2"
           >
             <img src={button2} alt="button2" />
           </Link>
-          <Link to="/police_services/police_database1/" className="button3">
+          <Link to="/police_services/accidents/" className="button3">
             <img src={button3} alt="button3" />
           </Link>
         </div>
       </div>
       <div className="card_mid">
-        {police_dashboardData.map((officers) => {
+        {accidents_dashboardData.map((accidents) => {
           return (
             <MediaCard
-              className="officers_cards"
-              stopien={officers.stopien}
-              imie={officers.imie}
-              nazwisko={officers.nazwisko}
-              pesel={officers.pesel}
-              image={officers.img}
+              className="accidents_card"
+              long={accidents.long}
+              lat={accidents.lat}
+              what_happ={accidents.what_happ}
+              image={accidents.img_source_1}
+              sluzby={accidents.sluzby}
+              injures={accidents.injures}
+              data_h={accidents.data_h}
             />
           );
         })}
@@ -70,4 +72,4 @@ function Police_dashboard() {
   );
 }
 
-export default Police_dashboard;
+export default Accidents_dashboard;

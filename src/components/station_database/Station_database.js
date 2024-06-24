@@ -5,7 +5,7 @@ import button10 from "./button10.png";
 import button20 from "./button20.png";
 import button30 from "./button30.png";
 import rectangle80 from "./Rectangle80.png";
-import database10 from "./database10.png";
+
 import { Link } from "react-router-dom";
 
 function Station_database({ text }) {
@@ -39,13 +39,20 @@ function Station_database({ text }) {
       <div className="station_database_title">POLICE STATION DATABASE</div>
       <div className="image_container2">
         <img className="rectangle80" src={rectangle80} alt="rectangle80" />
-        <img className="button10" src={button10} alt="button10" />
-        <img className="button30" src={button30} alt="button30" />
+        <Link to="/police_services/" className="button10">
+          <img src={button10} alt="button10" />
+        </Link>
         <Link
           to="/police_services/station_database/map_stations"
-          className="stations_map"
+          className="button20"
         >
-          <img className="button20" src={button20} alt="button20" />
+          <img src={button20} alt="button20" />
+        </Link>
+        <Link
+          to="/police_services/station_database/station_dashboard"
+          className="button30"
+        >
+          <img src={button30} alt="button30" />
         </Link>
       </div>
       <div className="table_mid1">
@@ -55,6 +62,8 @@ function Station_database({ text }) {
               <th>Name of police station</th>
               <th>Functions</th>
               <th>Address</th>
+              <th>Zip number</th>
+              <th>Phone number</th>
             </tr>
           </thead>
           <tbody>
@@ -63,6 +72,8 @@ function Station_database({ text }) {
                 <td>{stations.nazwa}</td>
                 <td>{stations.rodzaj}</td>
                 <td>{stations.adres}</td>
+                <td>{stations.kod_poczt}</td>
+                <td>{stations.nr}</td>
               </tr>
             ))}
           </tbody>

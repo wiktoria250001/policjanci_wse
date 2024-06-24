@@ -10,9 +10,7 @@ function Home({ text }) {
     <div className="home">
       <div className="home_top">
         <img className="logo1" src={logo1} alt="logo" />
-        <Link to="/contact_us" className="home_top_about">
-          Contact us
-        </Link>
+
         <Link to="/about_us" className="home_top_about1">
           About us
         </Link>

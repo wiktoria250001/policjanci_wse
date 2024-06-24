@@ -1,0 +1,18 @@
+.officers_cards {
+  flex: 1 1 0;
+  max-width: 300px;
+  min-width: 300px;
+  min-height: 00px;
+  background: #233a3b;
+
+  border: 1px solid#233a3b;
+  border-radius: 7px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.officers_cards:hover {
+  transform: scale(1.05);
+}

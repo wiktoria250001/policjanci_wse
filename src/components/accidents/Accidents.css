@@ -1,4 +1,4 @@
-.accidents {
+.accidents_database1 {
   /* background-color: black; */
   display: flex;
   background: #233a3b;
@@ -8,7 +8,7 @@
   width: 100vw;
   top: 100px;
 }
-.accidents_title {
+.accident_database_title {
   /* Dostępne usługi */
 
   position: absolute;
@@ -25,43 +25,15 @@
 
   color: #ffffff;
 }
-.database100 {
-  /* image 3 */
 
-  position: absolute;
-  width: 1522px;
-  height: 660px;
-  left: 180px;
-  top: 190px;
+.image_container2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
 }
-.button100 {
-  /* managment */
 
-  position: absolute;
-  width: 106px;
-  height: 86px;
-  left: 1338px;
-  top: 90px;
-}
-.button200 {
-  /* obraz_2024-04-12_110604038-removebg-preview 1 */
-
-  position: absolute;
-  width: 106px;
-  height: 86px;
-  left: 1466px;
-  top: 90px;
-}
-.button300 {
-  /* image 10 */
-
-  position: absolute;
-  width: 112.28px;
-  height: 86px;
-  left: 1591px;
-  top: 90px;
-}
-.rectangle800 {
+.rectangle8 {
   /* Rectangle 8 */
 
   position: absolute;
@@ -71,4 +43,69 @@
   top: 90px;
 
   background: #ffffff;
+}
+
+.button1 {
+  /* managment */
+
+  position: absolute;
+  width: 106px;
+  height: 86px;
+  left: 1338px;
+  top: 90px;
+}
+.button2 {
+  /* obraz_2024-04-12_110604038-removebg-preview 1 */
+
+  position: absolute;
+  width: 106px;
+  height: 86px;
+  left: 1466px;
+  top: 90px;
+}
+.button3 {
+  /* image 10 */
+
+  position: absolute;
+  width: 112.28px;
+  height: 86px;
+  left: 1591px;
+  top: 90px;
+}
+.table_mid {
+  width: 100%;
+}
+
+/* Styl dla kontenera, aby wyśrodkować tabelę pionowo i poziomo */
+.table-container {
+  display: flex;
+  justify-content: center; /* Wyśrodkowanie poziome */
+  align-items: center; /* Wyśrodkowanie pionowe */
+  height: 80vh; /* Wysokość 100% widoku */
+}
+
+/* Styl dla tabeli */
+.accidents_table {
+  width: 83%; /* Możesz dostosować szerokość według potrzeb */
+  border-collapse: collapse;
+  margin: 0 auto; /* Wyśrodkowanie poziome, gdyby flexbox nie był użyty */
+
+  font-family: "League Gothic";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 58px;
+
+  color: #ffffff;
+}
+
+/* Styl dla nagłówków i komórek tabeli */
+.accidents_table th,
+.accidents_table td {
+  border: 1px solid#f9f9f9;
+  padding: 10px;
+  text-align: left;
+}
+.accidents_table th {
+  background: #00676c;
 }
