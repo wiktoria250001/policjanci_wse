@@ -38,10 +38,7 @@ function PoliceDatabase1() {
       <div className="police_database_title">POLICE DATABASE</div>
       <div className="image_container1">
         <img className="rectangle8" src={rectangle8} alt="rectangle8" />
-        <Link
-          to="/police_services/police_database1/button1"
-          className="button1"
-        >
+        <Link to="/police_services/" className="button1">
           <img src={button1} alt="button1" />
         </Link>
         <Link
@@ -51,7 +48,7 @@ function PoliceDatabase1() {
           <img src={button2} alt="button2" />
         </Link>
         <Link
-          to="/police_services/police_database1/button3"
+          to="/police_services/police_database1/police_dashboard/"
           className="button3"
         >
           <img src={button3} alt="button3" />

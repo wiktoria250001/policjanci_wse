@@ -9,22 +9,22 @@
   top: 314px;
   margin-left: 150px;
 }
-.service_title20 {
+.service_title {
   position: absolute;
   width: 10000px;
-  height: 100px;
+  height: 115px;
   left: 180px;
   top: 80px;
 
   font-family: "League Gothic";
   font-style: normal;
   font-weight: 400;
-  font-size: 70px;
+  font-size: 83px;
   line-height: 115px;
 
   color: #ffffff;
 }
-.officers_dashboard {
+.accidents_dashboard {
   /* background-color: black; */
   display: flex;
   background: #233a3b;

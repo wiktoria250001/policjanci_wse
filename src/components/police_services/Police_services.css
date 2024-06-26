@@ -6,23 +6,33 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
 
 .services_title {
-  font-family: "League Gothic";
+  font-family: "League Gothic", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 83px;
   line-height: 151px;
   color: #ffffff;
   margin-bottom: 40px;
+  text-align: center;
 }
 
 .services_bottom {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 40px;
+}
+
+.service_wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .service_button {
@@ -32,29 +42,50 @@
   align-items: center;
   cursor: pointer;
   text-align: center;
-  background: #233a3b; /* Tło przycisku */
-  padding: 20px; /* Dodajemy odstęp wewnętrzny */
-  border: 2px solid #ffffff; /* Biała obwódka */
-  border-radius: 20px; /* Zaokrąglone rogi */
+  background: #2c3e50;
+  padding: 20px;
+  border: 2px solid #ffffff;
+  border-radius: 20px;
+  transition: background 0.3s, transform 0.3s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+}
+
+.service_button:hover {
+  background: #ffffff;
+  transform: translateY(-10px);
 }
 
 .service_image {
   width: 359.46px;
   height: 359.46px;
   border-radius: 20px;
-  background: #233a3b; /* Tło obrazka */
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 20px;
 }
 
 .service_title {
-  font-family: "Basic";
+  font-family: "Basic", sans-serif;
   font-style: normal;
-  font-weight: 400;
-  font-size: 48px;
-  line-height: 60px;
-  color: #233a3b;
-  margin-top: 20px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: #ffffff;
 }
 
 .service_button:hover .service_title {
+  color: #2c3e50;
+}
+
+.service_caption {
+  font-family: "Basic", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
   color: #ffffff;
+  margin-top: 10px;
+  max-width: 359.46px; /* Ensure captions are within the button width */
+  text-align: center;
 }
