@@ -34,7 +34,7 @@ function Stations_dashboard() {
   return (
     <div className="stations_dashboard">
       <div className="stations_top">
-        <div className="service_title">Police stations dashboard</div>
+        <div className="service_title100">POLICE STATIONS DASHBOARD</div>
         <div className="services_line"></div>
         <div className="database_menu">
           <img className="rectangle8" src={rectangle8} alt="rectangle8" />

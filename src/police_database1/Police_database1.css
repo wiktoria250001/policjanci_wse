@@ -8,11 +8,11 @@
   width: 100vw;
   top: 100px;
 }
+
 .police_database_title {
   /* Dostępne usługi */
-
   position: absolute;
-  width: 10000px;
+  width: 10000px; /* Zmieniłem, by odpowiednio dostosować szerokość */
   height: 115px;
   left: 180px;
   top: 80px;
@@ -33,45 +33,38 @@
   margin-bottom: 20px;
 }
 
-.rectangle8 {
-  /* Rectangle 8 */
-
+.rectangle8,
+.button1,
+.button2,
+.button3 {
+  /* Zmieniłem, aby poprawić pozycje przycisków */
   position: absolute;
   width: 106px;
   height: 86px;
-  left: 1466px;
   top: 90px;
+}
 
+.rectangle8 {
+  /* Rectangle 8 */
+  left: 1466px;
   background: #ffffff;
 }
 
 .button1 {
   /* managment */
-
-  position: absolute;
-  width: 106px;
-  height: 86px;
   left: 1338px;
-  top: 90px;
 }
+
 .button2 {
   /* obraz_2024-04-12_110604038-removebg-preview 1 */
-
-  position: absolute;
-  width: 106px;
-  height: 86px;
   left: 1466px;
-  top: 90px;
 }
+
 .button3 {
   /* image 10 */
-
-  position: absolute;
-  width: 112.28px;
-  height: 86px;
   left: 1591px;
-  top: 90px;
 }
+
 .table_mid {
   width: 100%;
 }
@@ -102,10 +95,33 @@
 /* Styl dla nagłówków i komórek tabeli */
 .officers_table th,
 .officers_table td {
-  border: 1px solid#f9f9f9;
+  border: 1px solid #f9f9f9;
   padding: 10px;
   text-align: left;
 }
+
 .officers_table th {
   background: #00676c;
+}
+
+/* Efekt podświetlenia przycisków po najechaniu myszką */
+.rectangle8:hover {
+  background-color: #5c5f62; /* Kolor tła po najechaniu */
+  color: #fff; /* Kolor tekstu po najechaniu */
+  cursor: pointer; /* Zmiana kursora na wskaźnik */
+}
+.button1:hover {
+  background-color: #5c5f62; /* Kolor tła po najechaniu */
+  color: #fff; /* Kolor tekstu po najechaniu */
+  cursor: pointer; /* Zmiana kursora na wskaźnik */
+}
+.button2:hover {
+  background-color: #5c5f62; /* Kolor tła po najechaniu */
+  color: #fff; /* Kolor tekstu po najechaniu */
+  cursor: pointer; /* Zmiana kursora na wskaźnik */
+}
+.button3:hover {
+  background-color: #5c5f62; /* Kolor tła po najechaniu */
+  color: #fff; /* Kolor tekstu po najechaniu */
+  cursor: pointer; /* Zmiana kursora na wskaźnik */
 }

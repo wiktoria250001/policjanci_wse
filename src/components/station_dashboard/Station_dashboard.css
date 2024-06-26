@@ -9,7 +9,7 @@
   top: 314px;
   margin-left: 150px;
 }
-.service_title {
+.service_title100 {
   position: absolute;
   width: 10000px;
   height: 115px;
@@ -19,7 +19,7 @@
   font-family: "League Gothic";
   font-style: normal;
   font-weight: 400;
-  font-size: 83px;
+  font-size: 76px;
   line-height: 115px;
 
   color: #ffffff;
