@@ -1,5 +1,4 @@
 .police_database1 {
-  /* background-color: black; */
   display: flex;
   background: #233a3b;
   justify-content: space-between;
@@ -12,7 +11,7 @@
 .police_database_title {
   /* Dostępne usługi */
   position: absolute;
-  width: 10000px; /* Zmieniłem, by odpowiednio dostosować szerokość */
+  width: 800px;
   height: 115px;
   left: 180px;
   top: 80px;
@@ -37,7 +36,6 @@
 .button1,
 .button2,
 .button3 {
-  /* Zmieniłem, aby poprawić pozycje przycisków */
   position: absolute;
   width: 106px;
   height: 86px;
@@ -56,7 +54,6 @@
 }
 
 .button2 {
-  /* obraz_2024-04-12_110604038-removebg-preview 1 */
   left: 1466px;
 }
 
@@ -69,19 +66,18 @@
   width: 100%;
 }
 
-/* Styl dla kontenera, aby wyśrodkować tabelę pionowo i poziomo */
 .table-container {
   display: flex;
   justify-content: center; /* Wyśrodkowanie poziome */
   align-items: center; /* Wyśrodkowanie pionowe */
-  height: 80vh; /* Wysokość 100% widoku */
+  height: 80vh;
 }
 
 /* Styl dla tabeli */
 .officers_table {
   width: 83%; /* Możesz dostosować szerokość według potrzeb */
   border-collapse: collapse;
-  margin: 0 auto; /* Wyśrodkowanie poziome, gdyby flexbox nie był użyty */
+  margin: 0 auto;
 
   font-family: "League Gothic";
   font-style: normal;
@@ -92,7 +88,6 @@
   color: #ffffff;
 }
 
-/* Styl dla nagłówków i komórek tabeli */
 .officers_table th,
 .officers_table td {
   border: 1px solid #f9f9f9;
@@ -104,24 +99,23 @@
   background: #00676c;
 }
 
-/* Efekt podświetlenia przycisków po najechaniu myszką */
 .rectangle8:hover {
-  background-color: #5c5f62; /* Kolor tła po najechaniu */
-  color: #fff; /* Kolor tekstu po najechaniu */
-  cursor: pointer; /* Zmiana kursora na wskaźnik */
+  background-color: #5c5f62;
+  color: #fff;
+  cursor: pointer;
 }
 .button1:hover {
-  background-color: #5c5f62; /* Kolor tła po najechaniu */
-  color: #fff; /* Kolor tekstu po najechaniu */
-  cursor: pointer; /* Zmiana kursora na wskaźnik */
+  background-color: #5c5f62;
+  color: #fff;
+  cursor: pointer;
 }
 .button2:hover {
-  background-color: #5c5f62; /* Kolor tła po najechaniu */
-  color: #fff; /* Kolor tekstu po najechaniu */
-  cursor: pointer; /* Zmiana kursora na wskaźnik */
+  background-color: #5c5f62;
+  color: #fff;
+  cursor: pointer;
 }
 .button3:hover {
-  background-color: #5c5f62; /* Kolor tła po najechaniu */
-  color: #fff; /* Kolor tekstu po najechaniu */
-  cursor: pointer; /* Zmiana kursora na wskaźnik */
+  background-color: #5c5f62;
+  color: #fff;
+  cursor: pointer;
 }

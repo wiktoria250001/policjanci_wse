@@ -12,7 +12,7 @@
   /* Dostępne usługi */
 
   position: absolute;
-  width: 10000px;
+  width: 1500px;
   height: 115px;
   left: 180px;
   top: 80px;
@@ -86,7 +86,7 @@
 
 /* Styl dla tabeli */
 .stations_table {
-  width: 83%; /* Możesz dostosować szerokość według potrzeb */
+  width: 83%;
   border-collapse: collapse;
   margin: 0 auto; /* Wyśrodkowanie poziome, gdyby flexbox nie był użyty */
 

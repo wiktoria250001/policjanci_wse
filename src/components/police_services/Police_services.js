@@ -15,8 +15,8 @@ function PoliceServices() {
             to="/police_services/police_database1"
             className="service_button"
           >
-            <img className="service_image" src={image3} alt="Police Officers" />
-            <div className="service_title">POLICE OFFICERS</div>
+            <img className="service_image" src={image3} alt="" />
+            <div className="service_title"></div>
           </Link>
           <div className="service_caption">
             Database of police officers and their details
@@ -27,8 +27,8 @@ function PoliceServices() {
             to="/police_services/station_database"
             className="service_button"
           >
-            <img className="service_image" src={image6} alt="Police Stations" />
-            <div className="service_title">POLICE STATIONS</div>
+            <img className="service_image" src={image6} alt="" />
+            <div className="service_title"></div>
           </Link>
           <div className="service_caption">
             Information about police stations

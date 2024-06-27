@@ -46,7 +46,7 @@
   padding: 20px;
   border: 2px solid #ffffff;
   border-radius: 20px;
-  transition: background 0.3s, transform 0.3s;
+
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-decoration: none;
 }
